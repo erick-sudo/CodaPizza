@@ -1,13 +1,15 @@
 package com.draw.codapizza.model
 
+import android.os.Parcelable
 import androidx.annotation.StringRes
 import com.draw.codapizza.R
+import kotlinx.parcelize.Parcelize
 
-// @Parcelize
+@Parcelize
 data class Pizza(
     val toppings: Map<Topping, ToppingPlacement> = emptyMap(),
     val size: PizzaSize = PizzaSize.Large
-) {
+) : Parcelable {
     val price: Double
         get() = size.price + toppings.asSequence()
             .sumOf { (_, toppingPlacement) ->

@@ -22,4 +22,8 @@
     <string name="pizza_extra_large">Extra Large</string>
 
     <string name="pizza_preview">Pizza preview</string>
+    <string name="select_pizza_size_directive">Select Pizza Size</string>
+    <string name="selected_pizza_info">Size: (%1$s)</string>
+
+    <string name="order_placed_toast">Order submitted</string>
 </resources>
